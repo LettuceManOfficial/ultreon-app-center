@@ -9,6 +9,7 @@ import AppsPage from "./routes/apps/AppsPage.tsx";
 import {TitleBar} from "./components/TitleBar.tsx";
 import SideBar from "./components/SideBar.tsx";
 import ProjectPage from "./routes/project/ProjectPage.tsx";
+import SettingsPage from './routes/settings/settings.tsx'
 
 const router = createHashRouter([
     {
@@ -33,6 +34,10 @@ const router = createHashRouter([
     //     path: "*",
     //     errorElement: <h1>Error 404</h1>
     // }
+    {
+        path: "settings",
+        element: <SettingsPage/>
+    },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
